@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sawarabi-mincho-regular {
+  font-family: "Sawarabi Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #0f141a, #050608);
+    padding: 20px;
+}
+
+.daily-card{
+    background: #14171c;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 30px;
+    padding: 35px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.title{
+    font-size: 1.8rem;
+    color: #ecedee;
+    letter-spacing: -0.02em;
+}
+
+.date-display{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #8a93a1;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 6px;
+    background: #1e2329;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+#progressFill{
+    height: 100%;
+    width: 0%;
+    background: #5d728a;
+    transition: 0.3s;
+}
+
+.add-task{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.add-task input{
+    flex: 1;
+    background: #1e2329;
+    border: 1px solid #1e2329;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 0.9rem;
+    color: white;
+    outline: none;
+}
+
+.add-task button{
+    background: #2a3038;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-task button:hover{
+    background: #3b4450;
+}
+
+.task-list{
+    list-style: none;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    padding: 12px 5px;
+    border-bottom: 1px solid #222;
+    color: #d1d9e6;
+    animation: fadeIn 0.3s ease;
+}
+
+.task-check{
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.task-text{
+    flex: 1;
+}
+
+.completed .task-text{
+    text-decoration:line-through;
+    color:#6b7280;
+}
+
+.delete-task{
+    background:none;
+    border:none;
+    color:#8b97a8;
+    font-size:1.2rem;
+    cursor:pointer;
+    padding:5px;
+}
+
+.delete-task:hover{
+    color:white;
+}
+
+.footer-states{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+    font-size:0.9rem;
+    color:#8a93a1;
+}
+
+#clearCompleted{
+    background:none;
+    border:1px solid #2c323a;
+    border-radius:20px;
+    padding:6px 14px;
+    color:#8a93a1;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+#clearCompleted:hover{
+    background:#1e2329;
+    color:white;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

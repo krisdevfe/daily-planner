@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--Google fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="daily-card">
+        
+    <header class="header">
+
+        <h1 class="title">Daily Planner</h1>
+
+    <div class="date-display">
+        <span id="dayName"></span>
+        <span id="fullDate"></span>
+    </div>
+
+    </header>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <div class="add-task">
+
+        <input type="text" id="newTaskInput" placeholder="adicione sua tarefa..." autocomplete="off">
+
+        <button id="addTaskBtn">+ adicionar</button>
+
+    </div>
+
+    <ul class="task-list" id="taskList"></ul>
+
+    <div class="footer-states">
+        <div class="counter">
+            <span id="pendingCount">0</span> restantes •
+            <span id="completedCount">0</span> concluídas
+        </div>
+
+        <button id="clearCompleted">limpar concluídas</button>
+    </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
