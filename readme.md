@@ -52,9 +52,3 @@ O design apresenta:
 1. Clone este repositório
 ```bash
 git clone https://github.com/SEU-USUARIO/daily-planner.git
-
-## Autora
-
-Kristiane Almeida
-
-Estudante de **Análise e Desenvolvimento de Sistemas** com foco em **Front-end**.
