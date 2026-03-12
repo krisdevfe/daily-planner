@@ -170,3 +170,35 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+/* Responsividade */
+@media (max-width: 600px){
+.header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.daily-card{
+    padding: 25px;
+}
+
+.add-task{
+    flex-direction: column;
+}
+
+.add-task button{
+    width: 100%;
+}
+
+.footer-states{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+}
