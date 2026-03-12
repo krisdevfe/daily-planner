@@ -47,8 +47,8 @@ O design apresenta:
 - Navegador moderno (Chrome, Firefox, Edge, Safari)
 - JavaScript habilitado
 
-### 🔧 Instalação
+### 🔧 Demo
 
-1. Clone este repositório
+Acesse o projeto online:
 ```bash
-
+https://krisdevfe.github.io/daily-planner/
